@@ -81,7 +81,7 @@ ng g m components/pages/characters/characters-details -m=app --route characters-
 ## Module about
 
 ```sh
-ng g m components/pages/about/about -m=app --route about
+ng g m components/pages/about -m=app --route about
 ```
 
 ### Add alias to gety paths
