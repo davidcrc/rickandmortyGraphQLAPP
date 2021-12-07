@@ -77,3 +77,9 @@ ng g m components/pages/characters/characters-list
 ```sh
 ng g m components/pages/characters/characters-details -m=app --route characters-details
 ```
+
+## Module about
+
+```sh
+ng g m components/pages/about/about -m=app --route about
+```

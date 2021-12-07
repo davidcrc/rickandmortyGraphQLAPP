@@ -28,6 +28,13 @@ const routes: Routes = [
         './components/pages/characters/characters-details/characters-details.module'
       ).then((m) => m.CharactersDetailsModule),
   },
+  {
+    path: 'about',
+    loadChildren: () =>
+      import('./components/pages/about/about/about.module').then(
+        (m) => m.AboutModule,
+      ),
+  },
 ];
 
 @NgModule({
