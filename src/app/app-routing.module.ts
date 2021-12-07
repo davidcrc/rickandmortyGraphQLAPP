@@ -21,6 +21,13 @@ const routes: Routes = [
         (m) => m.NotFoundModule,
       ),
   },
+  {
+    path: 'characters-details',
+    loadChildren: () =>
+      import(
+        './components/pages/characters/characters-details/characters-details.module'
+      ).then((m) => m.CharactersDetailsModule),
+  },
 ];
 
 @NgModule({

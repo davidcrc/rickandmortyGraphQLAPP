@@ -65,3 +65,15 @@ ng g m components/pages/notFound/notFound -m=app --route not
 ng g m components/pages/characters/characters-card
 ng g c components/pages/characters/characters-card
 ```
+
+## Module characters lits
+
+```sh
+ng g m components/pages/characters/characters-list
+```
+
+## Module characters details
+
+```sh
+ng g m components/pages/characters/characters-details -m=app --route characters-details
+```
