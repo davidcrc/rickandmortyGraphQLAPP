@@ -50,7 +50,7 @@ ng g c shared/components/header
 ## Module Episodes - with routes
 
 ```sh
-ng g m components/pages/episodes -m=app --route episodes --flat
+ng g m components/pages/episodes/episodes -m=app --route episodes --flat
 ```
 
 ## Module for 404 responses

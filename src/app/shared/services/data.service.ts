@@ -20,7 +20,6 @@ const QUERY = gql`
         species
         gender
         image
-        isFavorite
       }
     }
   }
@@ -48,7 +47,7 @@ export class DataService {
       .valueChanges.pipe(
         take(1),
         tap(({ data }) => {
-          // console.log('aqui', data);
+          console.log('aqui', data);
           const { characters, episodes } = data;
 
           this.charactersSubject.next(characters.results);

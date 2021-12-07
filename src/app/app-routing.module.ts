@@ -15,7 +15,7 @@ const routes: Routes = [
   {
     path: 'episodes',
     loadChildren: () =>
-      import('./components/pages/episodes.module').then(
+      import('./components/pages/episodes/episodes.module').then(
         (m) => m.EpisodesModule,
       ),
   },
@@ -38,6 +38,13 @@ const routes: Routes = [
     loadChildren: () =>
       import('./components/pages/about/about.module').then(
         (m) => m.AboutModule,
+      ),
+  },
+  {
+    path: 'episodes',
+    loadChildren: () =>
+      import('./components/pages/episodes/episodes.module').then(
+        (m) => m.EpisodesModule,
       ),
   },
   {
