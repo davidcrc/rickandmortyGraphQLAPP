@@ -1,1 +1,18 @@
-<p>header works!</p>
+<header>
+  <nav class="menu" role="navigation" aria-label="">
+    <div class="menu__toggle">
+      <input type="checkbox" id="checkMenu" />
+      <span></span>
+      <span></span>
+      <span></span>
+      
+        <ul class="navbar" >
+          <li><a [routerLink]="['/home']">Home</a></li>
+          <li><a [routerLink]="['/character-list']">Characters</a></li>
+          <li><a [routerLink]="['/episodes']">Episodes</a></li>
+          <li><a [routerLink]="['/about']">About</a></li>
+        </ul>
+      
+    </div>
+  </nav>
+</header>

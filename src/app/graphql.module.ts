@@ -3,7 +3,7 @@ import { APOLLO_OPTIONS } from 'apollo-angular';
 import { ApolloClientOptions, InMemoryCache } from '@apollo/client/core';
 import { HttpLink } from 'apollo-angular/http';
 
-const uri = '.';
+const uri = 'https://rickandmortyapi.com/graphql';
 export function createApollo(httpLink: HttpLink): ApolloClientOptions<unknown> {
   return {
     link: httpLink.create({ uri }),
@@ -20,4 +20,4 @@ export function createApollo(httpLink: HttpLink): ApolloClientOptions<unknown> {
     },
   ],
 })
-export class GraphQLModule { }
+export class GraphQLModule {}

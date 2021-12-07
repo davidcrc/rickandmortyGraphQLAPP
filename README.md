@@ -56,7 +56,7 @@ ng g m components/pages/episodes -m=app --route episodes --flat
 ## Module for 404 responses
 
 ```sh
-ng g m components/pages/notFound/notFound -m=app --route not
+ng g m components/pages/notFound -m=app --route not
 ```
 
 ## Module for characters, Component characters
@@ -104,4 +104,10 @@ ng g m components/pages/about/about -m=app --route about
     "src/environments/*"
   ],
 },
+```
+
+## Create shared service for data
+
+```sh
+ng g s shared/services/data --skip-tests
 ```
