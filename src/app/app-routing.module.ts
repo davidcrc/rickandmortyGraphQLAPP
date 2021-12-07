@@ -3,6 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'character-list',
+    pathMatch: 'full',
+  },
+  {
     path: 'home',
     loadChildren: () =>
       import('./components/pages/home/home.module').then((m) => m.HomeModule),
@@ -15,14 +20,14 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'not',
+    path: 'character-list',
     loadChildren: () =>
-      import('./components/pages/notFound/not-found/not-found.module').then(
-        (m) => m.NotFoundModule,
-      ),
+      import(
+        './components/pages/characters/characters-list/characters-list.module'
+      ).then((m) => m.CharactersListModule),
   },
   {
-    path: 'characters-details',
+    path: 'characters-details/:id',
     loadChildren: () =>
       import(
         './components/pages/characters/characters-details/characters-details.module'
@@ -33,6 +38,13 @@ const routes: Routes = [
     loadChildren: () =>
       import('./components/pages/about/about/about.module').then(
         (m) => m.AboutModule,
+      ),
+  },
+  {
+    path: '**',
+    loadChildren: () =>
+      import('./components/pages/notFound/not-found/not-found.module').then(
+        (m) => m.NotFoundModule,
       ),
   },
 ];

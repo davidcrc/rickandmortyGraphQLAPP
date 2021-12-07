@@ -69,7 +69,7 @@ ng g c components/pages/characters/characters-card
 ## Module characters lits
 
 ```sh
-ng g m components/pages/characters/characters-list
+ng g m components/pages/characters/characters-list -m=app --route character-list
 ```
 
 ## Module characters details
@@ -82,4 +82,26 @@ ng g m components/pages/characters/characters-details -m=app --route characters-
 
 ```sh
 ng g m components/pages/about/about -m=app --route about
+```
+
+### Add alias to gety paths
+
+```json
+"paths": {
+  "@app/*": [
+    "src/app/*"
+  ],
+  "@shared/*": [
+    "src/app/shared/*"
+  ],
+  "@characters/*": [
+    "src/app/components/pages/characters/*"
+  ],
+  "@pages/*": [
+    "src/app/components/pages/*"
+  ],
+  "@enviroment/*": [
+    "src/environments/*"
+  ],
+},
 ```
