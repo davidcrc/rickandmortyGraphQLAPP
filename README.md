@@ -46,3 +46,9 @@ ng g m components/pages/home/home -m=app --route home --flat
 ng g m shared/components/header
 ng g c shared/components/header
 ```
+
+## Module Episodes - with routes
+
+```sh
+ng g m components/pages/episodes -m=app --route episodes --flat
+```
