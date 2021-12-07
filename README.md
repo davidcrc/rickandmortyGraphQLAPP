@@ -52,3 +52,9 @@ ng g c shared/components/header
 ```sh
 ng g m components/pages/episodes -m=app --route episodes --flat
 ```
+
+## Module for 404 responses
+
+```sh
+ng g m components/pages/notFound/notFound -m=app --route not
+```

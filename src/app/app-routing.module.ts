@@ -14,6 +14,13 @@ const routes: Routes = [
         (m) => m.EpisodesModule,
       ),
   },
+  {
+    path: 'not',
+    loadChildren: () =>
+      import('./components/pages/notFound/not-found/not-found.module').then(
+        (m) => m.NotFoundModule,
+      ),
+  },
 ];
 
 @NgModule({
