@@ -39,3 +39,10 @@ ng add apollo-angular
 ```sh
 ng g m components/pages/home/home -m=app --route home --flat
 ```
+
+## Module, component => shared with header
+
+```sh
+ng g m shared/components/header
+ng g c shared/components/header
+```
