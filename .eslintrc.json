@@ -18,7 +18,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "ta",
+            "prefix": "app",
             "style": "camelCase"
           }
         ],
@@ -26,7 +26,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "ta",
+            "prefix": "app",
             "style": "kebab-case"
           }
         ]
