@@ -58,3 +58,10 @@ ng g m components/pages/episodes -m=app --route episodes --flat
 ```sh
 ng g m components/pages/notFound/notFound -m=app --route not
 ```
+
+## Module for characters, Component characters
+
+```sh
+ng g m components/pages/characters/characters-card
+ng g c components/pages/characters/characters-card
+```
